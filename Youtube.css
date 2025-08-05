@@ -1,0 +1,505 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+
+
+
+.verticle-nav {
+    height: 685px;
+    width: 64px;
+    background-color: black;
+    top: 56px; 
+    position: fixed;
+}
+
+.nav-1 {
+    width: 1463px;
+    height: 56px;
+    background-color: black;
+    opacity: 0.95;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.nav-2 {
+    width: 1400px;
+    height: 56px;
+    background-color: black;
+    opacity: 0.95;
+    top: 56px;
+    margin-left: 64px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.nav-3 {
+    height: 260px;
+    width: 1400px;
+    margin-left: 64px;
+    margin-top: 7rem;
+    background-image: url(bubbles1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-4 {
+    width: 1400px;
+    height: 800px;
+    background-color: black;
+    top: 372px;
+    margin-left: 64px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.start {
+    width: 30%;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.fa-youtube {
+    color: white;
+    padding: 15px 0 15px 15px;
+    font-size: 22px;
+}
+
+#youtube-logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+#youtube-logo sup {
+    font-size: 10px;
+    font-weight: 400;
+    color: grey;
+    opacity: 0.6;
+}
+
+.center{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-box {
+    height: 40px;
+    width: 500px;
+    border: 1px solid grey;
+    background: transparent;
+    margin: 0 0 0 16px;
+    padding: 0 4px 0 16px;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; 
+}
+
+input[type="text"] {
+    color: white;
+}
+
+
+.btn {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    width: 65px;
+    font-size: 18px;
+    color: white;
+    background-color: gray;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+
+ .search-box input {
+    border: none;
+    background: transparent;
+    height: 20px;
+    width: 434px; 
+}  
+
+.search-box:checked input {
+    border: none;
+}
+
+
+
+.voice {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+.voice:hover {
+    background-color: gray;
+    opacity: 0.5;
+}
+
+
+.voice i {
+    color: white;
+    font-size: 20px;
+}
+
+.end {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} 
+
+.create {
+    width: 90px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 20px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+.create:hover {
+    background-color: gray;
+    opacity: 0.5;
+}
+
+.create i {
+    padding-right: 8px;
+   opacity: 0.5;
+   font-size: 18px;
+}
+
+.notify {
+    color: white;
+    margin-left: 15px;
+    opacity: 1;
+    font-size: 20px;
+}
+
+.Ppic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: brown;
+    margin-left: 15px;
+}
+
+.items {
+    height: 290px;
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+    cursor: pointer;
+}
+.menu-item:hover {
+    height: 65px;
+    width: 60px;
+    border-radius: 8px;
+    background-color: #ffffff47;
+}
+
+.menu-item i {
+    font-size: 20px;
+    color: white;
+}
+.menu-item p {
+    font-size: 10px;
+    color: white;
+}
+
+.srch-history {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.all {
+    height: 32px;
+    width: 50px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+} 
+.music {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+.discovery {
+    height: 32px;
+    width: 75px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.sports {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.podcasts {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.shows {
+    height: 32px;
+    width: 60px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.valorant {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.gaming {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.google {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.tedx {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.shahrukh {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.movies {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.writers {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.hardik {
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.football{
+    height: 32px;
+    width: 70px;
+    margin-left: 25px;
+    padding-top: 5px;
+    border-radius: 8px;
+    background-color: gray;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.paragraph {
+    height: 250px;
+    width: 490px;
+    margin-left: 1.3rem;
+}
+
+h1 {
+    color: white;
+}
+
+.paragraph p {
+    margin-top: -1rem;
+    color: white;
+    font-size: 12px;
+}
+.trial {
+    height: 30px;
+    width: 120px;
+    margin-left: 1rem;
+    border: 1px solid white;
+    background-color: #ffffff7d;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yoytube-play-button {
+    height: 150px;
+    width: 200px;
+    border-radius: 15px;
+    margin-top: 70px;
+    border: 2px solid white;
+    background-color: #ffffff7d;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yoytube-play-button i {
+    font-size: 5rem;
+}
+
+.dots {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 535px;
+    margin-top: 5px;
+}
+.dots i {
+    color: white;
+}
+
+.card {
+    height: 320px;
+    width: 400px;
+    border-radius: 5%;
+    margin-left: 30px;
+    margin-top: 30px;
+    background-size: cover;
+}
+
+.card img {
+    width: 100%;
+    height: 75%;
+    border-radius: 5%;
+}
+.card p {
+    font-size: 18px;
+    color: white;
+    margin-top: -2px;
+    padding: 0 10px;
+}
+
+
+.YT-para {
+    display: flex;
+    justify-content: space-around;
+}
+.card i {
+    color: white;
+    float: right;
+    padding-right: 5px;
+    padding-top: 2px;
+}
